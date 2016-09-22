@@ -1,0 +1,54 @@
+package sesion08.collection;
+
+
+
+/**
+ * <p>Title: Collection</p>
+ * <p>Description: Interfaz que representa una colección de elementos.</p>
+ * <p>Copyright: Copyright (c) 2016</p>
+ * <p>Escuela de Ingeniería Informática </p>
+ * <p>Metodología de la Programación</p>
+ * 
+ * @author Profesores de Metodología de la Programación
+ * @version 1.0
+ */
+
+public interface Collection<T> {
+	
+	/**
+	 * Añade al final de la lista el elemento especificado 
+	 * @param value Elemento que se añade a la lista
+	 */
+	void add(Object value);
+
+	/**
+	 * Elimina el elemento de la colección que coincida con el parámetro 
+	 * Devuelve el elemento que fue eliminado de la colección 
+	 * @param El elemento que se quiere borrar
+	 * @return El elemento de la collección. Null si no se encuentra en la colección
+	 */
+	Object remove(Object value);
+	
+	
+	/**
+	 * Devuelve el número de elementos que hay en la colección
+	 * @return El número de elementos de la colección
+	 */
+	int size();
+	
+	
+	/**
+	 *  Indica si la colección contiene o no elementos
+	 * @return Devuelve <tt>true</tt> si la colección no contiene elementos <tt>false</tt> en caso contrario
+	 */
+	boolean isEmpty();
+
+	
+	/**
+	 * Devuelve la representación textual de la colección. Esto es:
+	 * "[el1, el2, ..., eln]" donde eli es la representación textual de su i-th elemento  
+	 * @return La representación textual de la colección
+	 */
+	String toString();
+	
+}

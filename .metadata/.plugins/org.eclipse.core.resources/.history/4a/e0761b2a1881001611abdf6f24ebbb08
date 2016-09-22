@@ -1,0 +1,366 @@
+/**
+ * 
+ */
+package equipos_y_jugadores;
+
+import exceptions.IllegalParameters;
+
+/**
+ * @author Antonio Payá y Guillermo Díaz
+ * @version 0.1
+ * 
+ * Clase Equipo , que contiene las propiedades como partidos ganados
+ * perdidos, goles ... etc , que permite ayudar en el cálculo.
+ *
+ */
+public class Equipo {
+	private int golesFavor; //goles a favor del equipo esta temporada
+	private int golesFavorCasa; //goles a favor del equipo esta temporada en casa
+	private int golesFavorAnterior; // goles a favor en la anterior liga
+	
+	private int golesContra; //goles en contra del equipo esta temporada
+	private int golesContraCasa; // goles en contra en casa del equipo esta temporada
+	private int golesContraAnterior; // goles en contra en la anterior liga
+	
+	private int partidosGanados; // partidos ganados del equipo esta temporada
+	private int partidosGanadosCasa; //partidos ganados en casa del equipo esta temporada
+	private int partidosGanadosFuera; //partidos ganados fuera del equipo esta temporada
+	
+	private int partidosPerdidos; //partidos perdidos del equipo esta temporada
+	private int partidosPerdidosCasa; //partidos perdidos del equipo esta temporada
+	private int partidosPerdidosFuera; //partidos perdidos del equipo esta temporada
+	
+	private int partidosEmpatados; //partidos empatados del equipo
+	private int partidosEmpatadosCasa; //partidos empatados del equipo en casa
+	private int partidosEmpatadosFuera; //partidos empatados del equipo fuera
+	
+	private int partidosJugados; //numero de partidos jugados
+	private int puesto; // puesto en la liga
+	private int puestoAnterior; // puesto en la anterior liga
+	private int nivelEquipo; // valor del 1 al 5 que valora el nivel del equipo
+	
+	private IllegalParameters exception1;
+	
+	
+
+	/**
+	 * Constructor principal de la clase
+	 * @param name, Nombre del equipo , de tipo String
+	 */
+	public Equipo(String name) {
+		// TODO Auto-generated constructor stub
+	}
+
+	
+	//Setters
+
+	/**
+	 * @param golesFavor the golesFavor to set
+	 */
+	private void setGolesFavor(int golesFavor) {
+		this.golesFavor = golesFavor;
+	}
+
+
+
+	/**
+	 * @param golesFavorCasa the golesFavorCasa to set
+	 */
+	private void setGolesFavorCasa(int golesFavorCasa) {
+		
+		this.golesFavorCasa = golesFavorCasa;
+	}
+
+
+
+	/**
+	 * @param golesFavorAnterior the golesFavorAnterior to set
+	 */
+	private void setGolesFavorAnterior(int golesFavorAnterior) {
+		this.golesFavorAnterior = golesFavorAnterior;
+	}
+
+
+
+	/**
+	 * @param golesContra the golesContra to set
+	 */
+	private void setGolesContra(int golesContra) {
+		this.golesContra = golesContra;
+	}
+
+
+
+	/**
+	 * @param golesContraCasa the golesContraCasa to set
+	 */
+	private void setGolesContraCasa(int golesContraCasa) {
+		this.golesContraCasa = golesContraCasa;
+	}
+
+
+
+	/**
+	 * @param golesContraAnterior the golesContraAnterior to set
+	 */
+	private void setGolesContraAnterior(int golesContraAnterior) {
+		this.golesContraAnterior = golesContraAnterior;
+	}
+
+
+
+	/**
+	 * @param partidosGanados the partidosGanados to set
+	 */
+	private void setPartidosGanados(int partidosGanados) {
+		this.partidosGanados = partidosGanados;
+	}
+
+
+
+	/**
+	 * @param partidosGanadosCasa the partidosGanadosCasa to set
+	 */
+	private void setPartidosGanadosCasa(int partidosGanadosCasa) {
+		this.partidosGanadosCasa = partidosGanadosCasa;
+	}
+
+
+
+	/**
+	 * @param partidosGanadosFuera the partidosGanadosFuera to set
+	 */
+	private void setPartidosGanadosFuera(int partidosGanadosFuera) {
+		this.partidosGanadosFuera = partidosGanadosFuera;
+	}
+
+
+
+	/**
+	 * @param partidosPerdidos the partidosPerdidos to set
+	 */
+	private void setPartidosPerdidos(int partidosPerdidos) {
+		this.partidosPerdidos = partidosPerdidos;
+	}
+
+
+
+	/**
+	 * @param partidosPerdidosCasa the partidosPerdidosCasa to set
+	 */
+	private void setPartidosPerdidosCasa(int partidosPerdidosCasa) {
+		this.partidosPerdidosCasa = partidosPerdidosCasa;
+	}
+
+
+
+	/**
+	 * @param partidosPerdidosFuera the partidosPerdidosFuera to set
+	 */
+	private void setPartidosPerdidosFuera(int partidosPerdidosFuera) {
+		this.partidosPerdidosFuera = partidosPerdidosFuera;
+	}
+
+
+
+	/**
+	 * @param partidosEmpatados the partidosEmpatados to set
+	 */
+	private void setPartidosEmpatados(int partidosEmpatados) {
+		this.partidosEmpatados = partidosEmpatados;
+	}
+
+
+
+	/**
+	 * @param partidosEmpatadosCasa the partidosEmpatadosCasa to set
+	 */
+	private void setPartidosEmpatadosCasa(int partidosEmpatadosCasa) {
+		this.partidosEmpatadosCasa = partidosEmpatadosCasa;
+	}
+
+
+
+	/**
+	 * @param partidosEmpatadosFuera the partidosEmpatadosFuera to set
+	 */
+	private void setPartidosEmpatadosFuera(int partidosEmpatadosFuera) {
+		this.partidosEmpatadosFuera = partidosEmpatadosFuera;
+	}
+
+
+
+	/**
+	 * @param partidosJugados the partidosJugados to set
+	 */
+	private void setPartidosJugados(int partidosJugados) {
+		this.partidosJugados = partidosJugados;
+	}
+
+
+
+	/**
+	 * @param puesto the puesto to set
+	 */
+	private void setPuesto(int puesto) {
+		this.puesto = puesto;
+	}
+
+
+
+	/**
+	 * @param puestoAnterior the puestoAnterior to set
+	 */
+	private void setPuestoAnterior(int puestoAnterior) {
+		this.puestoAnterior = puestoAnterior;
+	}
+
+
+
+	/**
+	 * @param nivelEquipo the nivelEquipo to set
+	 */
+	private void setNivelEquipo(int nivelEquipo) {
+		this.nivelEquipo = nivelEquipo;
+	}
+
+	
+	//Getters
+	
+
+	/**
+	 * @return the golesFavor
+	 */
+	public int getGolesFavor() {
+		return golesFavor;
+	}
+
+	/**
+	 * @return the golesFavorCasa
+	 */
+	public int getGolesFavorCasa() {
+		return golesFavorCasa;
+	}
+
+	/**
+	 * @return the golesFavorAnterior
+	 */
+	public int getGolesFavorAnterior() {
+		return golesFavorAnterior;
+	}
+
+	/**
+	 * @return the golesContra
+	 */
+	public int getGolesContra() {
+		return golesContra;
+	}
+
+	/**
+	 * @return the golesContraCasa
+	 */
+	public int getGolesContraCasa() {
+		return golesContraCasa;
+	}
+
+	/**
+	 * @return the golesContraAnterior
+	 */
+	public int getGolesContraAnterior() {
+		return golesContraAnterior;
+	}
+
+	/**
+	 * @return the partidosGanados
+	 */
+	public int getPartidosGanados() {
+		return partidosGanados;
+	}
+
+	/**
+	 * @return the partidosGanadosCasa
+	 */
+	public int getPartidosGanadosCasa() {
+		return partidosGanadosCasa;
+	}
+
+	/**
+	 * @return the partidosGanadosFuera
+	 */
+	public int getPartidosGanadosFuera() {
+		return partidosGanadosFuera;
+	}
+
+	/**
+	 * @return the partidosPerdidos
+	 */
+	public int getPartidosPerdidos() {
+		return partidosPerdidos;
+	}
+
+	/**
+	 * @return the partidosPerdidosCasa
+	 */
+	public int getPartidosPerdidosCasa() {
+		return partidosPerdidosCasa;
+	}
+
+	/**
+	 * @return the partidosPerdidosFuera
+	 */
+	public int getPartidosPerdidosFuera() {
+		return partidosPerdidosFuera;
+	}
+
+	/**
+	 * @return the partidosEmpatados
+	 */
+	public int getPartidosEmpatados() {
+		return partidosEmpatados;
+	}
+
+	/**
+	 * @return the partidosEmpatadosCasa
+	 */
+	public int getPartidosEmpatadosCasa() {
+		return partidosEmpatadosCasa;
+	}
+
+	/**
+	 * @return the partidosEmpatadosFuera
+	 */
+	public int getPartidosEmpatadosFuera() {
+		return partidosEmpatadosFuera;
+	}
+
+	/**
+	 * @return the partidosJugados
+	 */
+	public int getPartidosJugados() {
+		return partidosJugados;
+	}
+
+	/**
+	 * @return the puesto
+	 */
+	public int getPuesto() {
+		return puesto;
+	}
+
+	/**
+	 * @return the puestoAnterior
+	 */
+	public int getPuestoAnterior() {
+		return puestoAnterior;
+	}
+
+	/**
+	 * @return the nivelEquipo
+	 */
+	public int getNivelEquipo() {
+		return nivelEquipo;
+	}
+	
+	
+
+}

@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package equipos_y_jugadores;
+
+/**
+ * @author Antonio
+ *
+ */
+public class Equipo {
+
+	/**
+	 * 
+	 */
+	public Equipo() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

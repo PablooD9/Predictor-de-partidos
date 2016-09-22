@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item value="374" key="DIALOG_X_ORIGIN"/>
+		<item value="8" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.internal.QuickAccess">
+		<item value="525" key="dialogHeight"/>
+		<item value="1025" key="dialogWidth"/>
+		<list key="textEntries">
+		</list>
+		<list key="orderedElements">
+		</list>
+		<list key="orderedProviders">
+		</list>
+		<list key="textArray">
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.jdt.ui.wizards.JavaProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.jdt.ui.java"/>
+			<item value="org.eclipse.jdt.ui.java/org.eclipse.jdt.junit"/>
+			<item value="org.python.pydev.PythonCategory"/>
+			<item value="org.eclipse.wb"/>
+		</list>
+	</section>
+	<section name="ImportExportAction">
+		<item value="org.eclipse.ui.wizards.export.ZipFile" key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID"/>
+		<item value="org.eclipse.ui.wizards.import.ExternalProject" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+	</section>
+	<section name="ZipFileImportWizard">
+	</section>
+	<section name="ZipFileExportWizard">
+		<item value="true" key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID"/>
+		<item value="true" key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID"/>
+		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\Antonio\OneDrive\uniovi\Segundo\Comunicacion Persona Maquina\Practicas\p2.zip"/>
+			<item value="C:\Users\Antonio\OneDrive\uniovi\Segundo\Comunicacion Persona Maquina\Practicas\Practica 1\p1.zip"/>
+			<item value="C:\Users\Antonio\OneDrive\uniovi\Metodologia de la Programacion\Sesion 11\sesion11.zip"/>
+			<item value="C:\Users\Antonio\OneDrive\.NET\Juegos\Juego Tenis.zip"/>
+			<item value="C:\Users\Antonio\OneDrive\uniovi\Metodologia de la Programacion\Sesion 9\AntonioPayaGonzalez-S9L6.zip"/>
+			<item value="C:\Users\Antonio\OneDrive\uniovi\Metodologia de la Programacion\Sesion 8\AntonioPayaGonzalez-S8L6.zip"/>
+			<item value="C:\Users\Antonio\OneDrive\uniovi\Metodologia de la Programacion\AntonioPayaGonzales-S6L6.zip"/>
+			<item value="C:\Users\Antonio\OneDrive\uniovi\Metodologia de la Programacion\Sesion 4\sesion.zip"/>
+			<item value="C:\Users\Antonio\OneDrive\uniovi\Metodologia de la Programacion\Sesion 3.zip"/>
+		</list>
+	</section>
+</section>

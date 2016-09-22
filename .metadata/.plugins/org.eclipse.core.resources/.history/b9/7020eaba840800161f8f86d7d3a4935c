@@ -1,0 +1,58 @@
+package sesion08.collection;
+
+/**
+ * <p>Title: List</p>
+ * <p>Description: Interface que representa una secuencia de elemntos (una colección) donde el mismo elemento puede estar estar repetido.</p>
+ * <p>Copyright: Copyright (c) 2016</p>
+ * <p>Escuela de Ingeniería Informática </p>
+ * <p>Metodología de la Programación</p>
+ * 
+ * @author Profesores de Metodología de la Programación
+ * @version 1.0
+ * @param <T>
+ */
+
+public interface List<T> extends Collection<T> {
+	
+	/**
+	 * Inserta el elemento en la posición indicada en la lista.
+	 * Desplaza el elemento actualmente en esa posición (si existe) y los elementos posteriores
+     * a la derecha (añade uno a sus índices). 
+	 * @param index Posicion donde se desea insertar el elemento
+	 * @param value Elemento que se inserta 
+	 */
+	void add(int index, T value);
+
+	/**
+	 * Elimina el elemento que se encuentra en la posición indicada de la lista
+	 * Desplaza los elementos posteriores a la izquierda (resta uno a sus índices). 
+	 * Returns el elemento que fue eliminado de la lista. 
+	 * @param index índice del elemento que se desea eliminar
+	 * @return El elemento que se encontraba previamente en la posición indicada
+	 */
+	Object remove(int index);
+	
+	/**
+	 * Devuelve el índice de la primera aparición del elemento en la lista, 
+	 * o -1 si la lista no contiene el elemento. 
+	 * @param object Elemento a buscar
+	 * @return El índice de la primara aparición del elemento en la lista, o -1 si la lista no contiene el elemento
+	 */
+	int indexOf(T object);
+
+	/**
+	 * Devuelve el elemento que se encuentra en la posición indicada de la lista. 
+	 * @param index Índice del elemento a recuperar
+	 * @return El elemento que se encuentra en la posición indicada de la lista  
+	 */
+	Object get(int index);
+	
+	/**
+	 * Reemplaza el elemento de la posición indicada en la lista con el elemento especificado
+	 * @param index Índice del elemento a reemplazar
+	 * @param value Elemento a almacenar en la posición indicada
+	 * @return El elemento que se encontraba previamente en la posición indicada
+	 */
+	Object set(int index, T value);
+
+}

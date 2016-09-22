@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\CPM\workspace\Practica2"/>
+			<item value="D:\CPM\workspace\Practica1"/>
+			<item value="C:\Users\Antonio\Downloads\sesion13"/>
+			<item value="C:\Users\Antonio\Downloads\Sesion12.Alumnos"/>
+			<item value="C:\Users\Antonio\Downloads\exceptions"/>
+			<item value="C:\Users\Antonio\Desktop\SimuladorPartidos"/>
+			<item value="C:\Users\Antonio\Dropbox (Personal)\Proyecto FM\SimuladorPartidosJava\SimuladorPartidos"/>
+			<item value="C:\Users\Antonio\Desktop\Proyecto Casino"/>
+			<item value="C:\Users\Antonio\Desktop\Ruleta"/>
+			<item value="C:\Users\Antonio\Desktop\Pokemon"/>
+			<item value="C:\Users\Antonio\Desktop\sesion08"/>
+			<item value="C:\Users\Antonio\Desktop\Sesión 8\Sesión 8\sesion08"/>
+			<item value="C:\Users\Antonio\OneDrive\uniovi\Metodologia de la Programacion\Sesion 8"/>
+			<item value="C:\Users\Antonio\OneDrive\uniovi\Metodologia de la Programacion\Examen 1 enunciados\SimulacroInicial2"/>
+			<item value="C:\Users\Antonio\OneDrive\uniovi\Metodologia de la Programacion\Examen 1 enunciados\SimulacroInicial"/>
+			<item value="C:\Users\Antonio\Desktop\GreenHouse\GreenHouse"/>
+			<item value="C:\Users\Antonio\OneDrive\uniovi\Metodologia de la Programacion\Sesion 5"/>
+			<item value="C:\Users\Antonio\Desktop\dome"/>
+			<item value="C:\Users\Antonio\Desktop\Algoritmos"/>
+			<item value="C:\Users\Antonio\Desktop\bugs"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.python.pydev.ui.wizards.project.PythonProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.python.pydev.PythonCategory"/>
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item value="381" key="DIALOG_X_ORIGIN"/>
+		<item value="185" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="SaveAsDialogSettings">
+		<item value="525" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="580" key="DIALOG_HEIGHT"/>
+		<item value="429" key="DIALOG_X_ORIGIN"/>
+		<item value="8" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

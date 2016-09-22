@@ -1,0 +1,22 @@
+/**
+ * 
+ */
+package linkedlist;
+
+/**
+ * @author UO251065
+ *
+ */
+class Node {
+
+	Object value;
+	Node next;
+	Node(Object value,Node next){
+		if (value==null){
+			throw new RuntimeException("Parametro incorrecto");
+		}
+		this.value = value;
+		this.next = next;
+	}
+	
+}

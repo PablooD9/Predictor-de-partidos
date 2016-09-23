@@ -1,0 +1,42 @@
+/**
+ * 
+ */
+package equipos_y_jugadores;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+/**
+ * @author Antonio
+ *
+ */
+public class EquipoTest {
+	Equipo equipo1;
+
+	/**
+	 * @throws java.lang.Exception
+	 */
+	@Before
+	public void setUp() throws Exception {
+		equipo1 = new Equipo("Villareal",44,35,18,10,10,4,4);
+		equipo1.setPartidosGanadosCasa(12);
+		equipo1.setPartidosEmpatadosCasa(4);
+		equipo1.setPartidosPerdidosCasa(3);
+		equipo1.setGolesFavorAnterior(50);
+		equipo1.setGolesContraAnterior(30);
+		equipo1.setGolesFavorCasa(26);
+		equipo1.setGolesContraCasa(12);
+	}
+
+	/**
+	 * Test method for {@link equipos_y_jugadores.Equipo#indiceEquipo(boolean)}.
+	 */
+	@Test
+	public final void testIndiceEquipo() {
+		System.out.println(equipo1.indiceCasa());
+		System.out.println(equipo1.indiceEquipo(true));
+	}
+
+}

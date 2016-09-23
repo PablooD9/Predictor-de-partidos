@@ -15,7 +15,7 @@ public class IllegalParameters  extends Exception{
 		
 	}
 	
-	public void mayor0(int param){
+	public void mayor0(double param){
 		if (param < 0){
 			throw new RuntimeException("Parámetro incorrecto ya que es menor que 0");
 		}

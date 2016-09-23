@@ -15,30 +15,30 @@ import exceptions.IllegalParameters;
  */
 public class Equipo {
 	private String name; //nombre del equipo
-	private int golesFavor; //goles a favor del equipo esta temporada
-	private int golesFavorCasa; //goles a favor del equipo esta temporada en casa
-	private int golesFavorAnterior; // goles a favor en la anterior liga
+	private double golesFavor; //goles a favor del equipo esta temporada
+	private double golesFavorCasa; //goles a favor del equipo esta temporada en casa
+	private double golesFavorAnterior; // goles a favor en la anterior liga
 	
-	private int golesContra; //goles en contra del equipo esta temporada
-	private int golesContraCasa; // goles en contra en casa del equipo esta temporada
-	private int golesContraAnterior; // goles en contra en la anterior liga
+	private double golesContra; //goles en contra del equipo esta temporada
+	private double golesContraCasa; // goles en contra en casa del equipo esta temporada
+	private double golesContraAnterior; // goles en contra en la anterior liga
 	
-	private int partidosGanados; // partidos ganados del equipo esta temporada
-	private int partidosGanadosCasa; //partidos ganados en casa del equipo esta temporada
-	private int partidosGanadosFuera; //partidos ganados fuera del equipo esta temporada
+	private double partidosGanados; // partidos ganados del equipo esta temporada
+	private double partidosGanadosCasa; //partidos ganados en casa del equipo esta temporada
+	private double partidosGanadosFuera; //partidos ganados fuera del equipo esta temporada
 	
-	private int partidosPerdidos; //partidos perdidos del equipo esta temporada
-	private int partidosPerdidosCasa; //partidos perdidos del equipo esta temporada
-	private int partidosPerdidosFuera; //partidos perdidos del equipo esta temporada
+	private double partidosPerdidos; //partidos perdidos del equipo esta temporada
+	private double partidosPerdidosCasa; //partidos perdidos del equipo esta temporada
+	private double partidosPerdidosFuera; //partidos perdidos del equipo esta temporada
 	
-	private int partidosEmpatados; //partidos empatados del equipo
-	private int partidosEmpatadosCasa; //partidos empatados del equipo en casa
-	private int partidosEmpatadosFuera; //partidos empatados del equipo fuera
+	private double partidosEmpatados; //partidos empatados del equipo
+	private double partidosEmpatadosCasa; //partidos empatados del equipo en casa
+	private double partidosEmpatadosFuera; //partidos empatados del equipo fuera
 	
-	private int partidosJugados; //numero de partidos jugados
-	private int puesto; // puesto en la liga
-	private int puestoAnterior; // puesto en la anterior liga
-	private int nivelEquipo; // valor del 1 al 5 que valora el nivel del equipo
+	private double partidosJugados; //numero de partidos jugados
+	private double puesto; // puesto en la liga
+	private double puestoAnterior; // puesto en la anterior liga
+	private double nivelEquipo; // valor del 1 al 5 que valora el nivel del equipo
 	
 	private IllegalParameters exception1;
 	
@@ -47,7 +47,7 @@ public class Equipo {
 	 * Constructor que crea la clase solo con el nombre y nivel del equipo
 	 * @param name, Nombre del equipo , de tipo String
 	 */
-	public Equipo(String name,int nivelEquipo) {
+	public Equipo(String name,double nivelEquipo) {
 		
 		exception1 = new IllegalParameters();
 		setName(name);
@@ -59,8 +59,8 @@ public class Equipo {
 	/**
 	 * Constructor principal de la clase, con los atributos mas basicos
 	 */
-	public Equipo(String name,int golesFavor,int golesContra,int partidosGanados,int partidosPerdidos,int partidosEmpatados,
-			int puesto,int nivelEquipo) {
+	public Equipo(String name,double golesFavor,double golesContra,double partidosGanados,double partidosPerdidos,double partidosEmpatados,
+			double puesto,double nivelEquipo) {
 		
 		exception1 = new IllegalParameters();
 		setName(name);
@@ -87,7 +87,7 @@ public class Equipo {
 	/**
 	 * @param golesFavor the golesFavor to set
 	 */
-	private void setGolesFavor(int golesFavor) {
+	public void setGolesFavor(double golesFavor) {
 		exception1.mayor0(golesFavor);
 		this.golesFavor = golesFavor;
 	}
@@ -97,7 +97,7 @@ public class Equipo {
 	/**
 	 * @param golesFavorCasa the golesFavorCasa to set
 	 */
-	private void setGolesFavorCasa(int golesFavorCasa) {
+	public void setGolesFavorCasa(double golesFavorCasa) {
 		exception1.mayor0(golesFavorCasa);
 		this.golesFavorCasa = golesFavorCasa;
 	}
@@ -107,7 +107,7 @@ public class Equipo {
 	/**
 	 * @param golesFavorAnterior the golesFavorAnterior to set
 	 */
-	private void setGolesFavorAnterior(int golesFavorAnterior) {
+	public void setGolesFavorAnterior(double golesFavorAnterior) {
 		exception1.mayor0(golesFavorAnterior);
 		this.golesFavorAnterior = golesFavorAnterior;
 	}
@@ -115,11 +115,11 @@ public class Equipo {
 
 
 	/**
-	 * @param golesContra the golesContra to set
+	 * @param golesContra2 the golesContra to set
 	 */
-	private void setGolesContra(int golesContra) {
-		exception1.mayor0(golesContra);
-		this.golesContra = golesContra;
+	public void setGolesContra(double golesContra2) {
+		exception1.mayor0(golesContra2);
+		this.golesContra = golesContra2;
 	}
 
 
@@ -127,7 +127,7 @@ public class Equipo {
 	/**
 	 * @param golesContraCasa the golesContraCasa to set
 	 */
-	private void setGolesContraCasa(int golesContraCasa) {
+	public void setGolesContraCasa(double golesContraCasa) {
 		exception1.mayor0(golesContraCasa);
 		this.golesContraCasa = golesContraCasa;
 	}
@@ -137,7 +137,7 @@ public class Equipo {
 	/**
 	 * @param golesContraAnterior the golesContraAnterior to set
 	 */
-	private void setGolesContraAnterior(int golesContraAnterior) {
+	public void setGolesContraAnterior(double golesContraAnterior) {
 		exception1.mayor0(golesContraAnterior);
 		this.golesContraAnterior = golesContraAnterior;
 	}
@@ -147,7 +147,7 @@ public class Equipo {
 	/**
 	 * @param partidosGanados the partidosGanados to set
 	 */
-	private void setPartidosGanados(int partidosGanados) {
+	public void setPartidosGanados(double partidosGanados) {
 		exception1.mayor0(partidosGanados);
 		this.partidosGanados = partidosGanados;
 	}
@@ -157,7 +157,7 @@ public class Equipo {
 	/**
 	 * @param partidosGanadosCasa the partidosGanadosCasa to set
 	 */
-	private void setPartidosGanadosCasa(int partidosGanadosCasa) {
+	public void setPartidosGanadosCasa(double partidosGanadosCasa) {
 		exception1.mayor0(partidosGanadosCasa);
 		this.partidosGanadosCasa = partidosGanadosCasa;
 	}
@@ -167,7 +167,7 @@ public class Equipo {
 	/**
 	 * @param partidosGanadosFuera the partidosGanadosFuera to set
 	 */
-	private void setPartidosGanadosFuera(int partidosGanadosFuera) {
+	public void setPartidosGanadosFuera(double partidosGanadosFuera) {
 		exception1.mayor0(partidosGanadosFuera);
 		this.partidosGanadosFuera = partidosGanadosFuera;
 	}
@@ -175,11 +175,11 @@ public class Equipo {
 
 
 	/**
-	 * @param partidosPerdidos the partidosPerdidos to set
+	 * @param partidosPerdidos2 the partidosPerdidos to set
 	 */
-	private void setPartidosPerdidos(int partidosPerdidos) {
-		exception1.mayor0(partidosPerdidos);
-		this.partidosPerdidos = partidosPerdidos;
+	public void setPartidosPerdidos(double partidosPerdidos2) {
+		exception1.mayor0(partidosPerdidos2);
+		this.partidosPerdidos = partidosPerdidos2;
 	}
 
 
@@ -187,7 +187,7 @@ public class Equipo {
 	/**
 	 * @param partidosPerdidosCasa the partidosPerdidosCasa to set
 	 */
-	private void setPartidosPerdidosCasa(int partidosPerdidosCasa) {
+	public void setPartidosPerdidosCasa(double partidosPerdidosCasa) {
 		exception1.mayor0(partidosPerdidosCasa);
 		this.partidosPerdidosCasa = partidosPerdidosCasa;
 	}
@@ -197,7 +197,7 @@ public class Equipo {
 	/**
 	 * @param partidosPerdidosFuera the partidosPerdidosFuera to set
 	 */
-	private void setPartidosPerdidosFuera(int partidosPerdidosFuera) {
+	public void setPartidosPerdidosFuera(double partidosPerdidosFuera) {
 		exception1.mayor0(partidosPerdidosFuera);
 		this.partidosPerdidosFuera = partidosPerdidosFuera;
 	}
@@ -205,11 +205,11 @@ public class Equipo {
 
 
 	/**
-	 * @param partidosEmpatados the partidosEmpatados to set
+	 * @param partidosEmpatados2 the partidosEmpatados to set
 	 */
-	private void setPartidosEmpatados(int partidosEmpatados) {
-		exception1.mayor0(partidosEmpatados);
-		this.partidosEmpatados = partidosEmpatados;
+	public void setPartidosEmpatados(double partidosEmpatados2) {
+		exception1.mayor0(partidosEmpatados2);
+		this.partidosEmpatados = partidosEmpatados2;
 	}
 
 
@@ -217,7 +217,7 @@ public class Equipo {
 	/**
 	 * @param partidosEmpatadosCasa the partidosEmpatadosCasa to set
 	 */
-	private void setPartidosEmpatadosCasa(int partidosEmpatadosCasa) {
+	public void setPartidosEmpatadosCasa(double partidosEmpatadosCasa) {
 		exception1.mayor0(partidosEmpatadosCasa);
 		this.partidosEmpatadosCasa = partidosEmpatadosCasa;
 	}
@@ -227,7 +227,7 @@ public class Equipo {
 	/**
 	 * @param partidosEmpatadosFuera the partidosEmpatadosFuera to set
 	 */
-	private void setPartidosEmpatadosFuera(int partidosEmpatadosFuera) {
+	public void setPartidosEmpatadosFuera(double partidosEmpatadosFuera) {
 		exception1.mayor0(partidosEmpatadosFuera);
 		this.partidosEmpatadosFuera = partidosEmpatadosFuera;
 	}
@@ -235,11 +235,11 @@ public class Equipo {
 
 
 	/**
-	 * @param puesto the puesto to set
+	 * @param puesto2 the puesto to set
 	 */
-	private void setPuesto(int puesto) {
-		exception1.mayor0(puesto);
-		this.puesto = puesto;
+	public void setPuesto(double puesto2) {
+		exception1.mayor0(puesto2);
+		this.puesto = puesto2;
 	}
 
 
@@ -247,7 +247,7 @@ public class Equipo {
 	/**
 	 * @param puestoAnterior the puestoAnterior to set
 	 */
-	private void setPuestoAnterior(int puestoAnterior) {
+	public void setPuestoAnterior(double puestoAnterior) {
 		exception1.mayor0(puestoAnterior);
 		this.puestoAnterior = puestoAnterior;
 	}
@@ -255,12 +255,12 @@ public class Equipo {
 
 
 	/**
-	 * @param nivelEquipo the nivelEquipo to set
+	 * @param nivelEquipo2 the nivelEquipo to set
 	 */
-	private void setNivelEquipo(int nivelEquipo) {
-		if(nivelEquipo < 1 || nivelEquipo > 5)
+	private void setNivelEquipo(double nivelEquipo2) {
+		if(nivelEquipo2 < 1 || nivelEquipo2 > 5)
 			throw new RuntimeException("Nivel de equipo mayor que 5 o menor que 1");
-		this.nivelEquipo = nivelEquipo;
+		this.nivelEquipo = nivelEquipo2;
 	}
 
 	
@@ -277,112 +277,112 @@ public class Equipo {
 	/**
 	 * @return the golesFavor
 	 */
-	public int getGolesFavor() {
+	public double getGolesFavor() {
 		return golesFavor;
 	}
 
 	/**
 	 * @return the golesFavorCasa
 	 */
-	public int getGolesFavorCasa() {
+	public double getGolesFavorCasa() {
 		return golesFavorCasa;
 	}
 
 	/**
 	 * @return the golesFavorAnterior
 	 */
-	public int getGolesFavorAnterior() {
+	public double getGolesFavorAnterior() {
 		return golesFavorAnterior;
 	}
 
 	/**
 	 * @return the golesContra
 	 */
-	public int getGolesContra() {
+	public double getGolesContra() {
 		return golesContra;
 	}
 
 	/**
 	 * @return the golesContraCasa
 	 */
-	public int getGolesContraCasa() {
+	public double getGolesContraCasa() {
 		return golesContraCasa;
 	}
 
 	/**
 	 * @return the golesContraAnterior
 	 */
-	public int getGolesContraAnterior() {
+	public double getGolesContraAnterior() {
 		return golesContraAnterior;
 	}
 
 	/**
 	 * @return the partidosGanados
 	 */
-	public int getPartidosGanados() {
+	public double getPartidosGanados() {
 		return partidosGanados;
 	}
 
 	/**
 	 * @return the partidosGanadosCasa
 	 */
-	public int getPartidosGanadosCasa() {
+	public double getPartidosGanadosCasa() {
 		return partidosGanadosCasa;
 	}
 
 	/**
 	 * @return the partidosGanadosFuera
 	 */
-	public int getPartidosGanadosFuera() {
+	public double getPartidosGanadosFuera() {
 		return partidosGanadosFuera;
 	}
 
 	/**
 	 * @return the partidosPerdidos
 	 */
-	public int getPartidosPerdidos() {
+	public double getPartidosPerdidos() {
 		return partidosPerdidos;
 	}
 
 	/**
 	 * @return the partidosPerdidosCasa
 	 */
-	public int getPartidosPerdidosCasa() {
+	public double getPartidosPerdidosCasa() {
 		return partidosPerdidosCasa;
 	}
 
 	/**
 	 * @return the partidosPerdidosFuera
 	 */
-	public int getPartidosPerdidosFuera() {
+	public double getPartidosPerdidosFuera() {
 		return partidosPerdidosFuera;
 	}
 
 	/**
 	 * @return the partidosEmpatados
 	 */
-	public int getPartidosEmpatados() {
+	public double getPartidosEmpatados() {
 		return partidosEmpatados;
 	}
 
 	/**
 	 * @return the partidosEmpatadosCasa
 	 */
-	public int getPartidosEmpatadosCasa() {
+	public double getPartidosEmpatadosCasa() {
 		return partidosEmpatadosCasa;
 	}
 
 	/**
 	 * @return the partidosEmpatadosFuera
 	 */
-	public int getPartidosEmpatadosFuera() {
+	public double getPartidosEmpatadosFuera() {
 		return partidosEmpatadosFuera;
 	}
 
 	/**
 	 * @return the partidosJugados
 	 */
-	public int getPartidosJugados() {
+	public double getPartidosJugados() {
 		this.partidosJugados = this.getPartidosGanados()+this.getPartidosEmpatados()+this.getPartidosPerdidos();
 		return partidosJugados;
 	}
@@ -390,21 +390,21 @@ public class Equipo {
 	/**
 	 * @return the puesto
 	 */
-	public int getPuesto() {
+	public double getPuesto() {
 		return puesto;
 	}
 
 	/**
 	 * @return the puestoAnterior
 	 */
-	public int getPuestoAnterior() {
+	public double getPuestoAnterior() {
 		return puestoAnterior;
 	}
 
 	/**
 	 * @return the nivelEquipo
 	 */
-	public int getNivelEquipo() {
+	public double getNivelEquipo() {
 		return nivelEquipo;
 	}
 	
@@ -414,11 +414,14 @@ public class Equipo {
 	 * Metodo que devuelve un numero que significa lo potente que es el equipo fuera de casa
 	 * @return int
 	 */
-	public int indiceFuera(){
-		int indice;
-		int partidosJugadosFuera = this.getPartidosEmpatadosFuera()+this.getPartidosGanadosFuera()+this.getPartidosPerdidosFuera();
-		int goles =( this.getGolesFavor()-this.getGolesFavorCasa())-(this.getGolesContra()-this.getGolesContraCasa());
-		indice = (getPartidosGanadosFuera()-getPartidosPerdidosFuera())/partidosJugadosFuera + (goles/10);
+	public double indiceFuera(){
+		double indice;
+		double partidosJugadosFuera = this.getPartidosEmpatadosFuera()+this.getPartidosGanadosFuera()+this.getPartidosPerdidosFuera();
+		double goles =( this.getGolesFavor()-this.getGolesFavorCasa())-(this.getGolesContra()-this.getGolesContraCasa());
+		if(getPartidosPerdidosFuera()>getPartidosGanadosFuera() || goles<0)
+			indice = 0;
+		else
+			indice = (getPartidosGanadosFuera()-getPartidosPerdidosFuera())/partidosJugadosFuera + (goles/10);
 		return indice;
 	}
 	
@@ -426,14 +429,34 @@ public class Equipo {
 	 * Metodo que devuelve un numero que significa lo potente que es el equipo en casa
 	 * @return int
 	 */
-	public int indiceCasa(){
-		int indice;
-		int partidosJugadosCasa = this.getPartidosEmpatadosCasa()+this.getPartidosGanadosCasa()+this.getPartidosPerdidosCasa();
-		int goles = this.getGolesFavorCasa()-this.getGolesContraCasa();
-		indice = (getPartidosGanadosCasa()-getPartidosPerdidosCasa())/partidosJugadosCasa + (goles/10);
+	public double indiceCasa(){
+		double indice;
+		double partidosJugadosCasa = this.getPartidosEmpatadosCasa()+this.getPartidosGanadosCasa()+this.getPartidosPerdidosCasa();
+		double goles = this.getGolesFavorCasa()-this.getGolesContraCasa();
+		if(getPartidosPerdidosCasa() > getPartidosGanadosCasa() || goles<0)
+			indice = goles/10;
+		else
+			indice = (getPartidosGanadosCasa()-getPartidosPerdidosCasa())/partidosJugadosCasa + (goles/10);
 		return indice;
 	}
 	
-	
+	/**
+	 * Metodo que devuelve un numero que significa la potencia del equipo, (sin tener en cuenta su rival)
+	 * @param juegaCasa, de tipo boleano , true si juega en casa
+	 * @return
+	 */
+	public double indiceEquipo(boolean juegaCasa){
+		double indice;
+		double golesAnterior = (getGolesFavorAnterior()-getGolesContraAnterior())/100;
+		double goles = (getGolesFavor()-getGolesContra())/100;
+		if(juegaCasa){
+			indice=indiceCasa()-(1/getPuesto()) + goles + golesAnterior + getNivelEquipo() ;
+			return indice;
+		}
+		else{
+			indice=indiceFuera()-(1/getPuesto())+ golesAnterior + (0.1*getNivelEquipo());
+			return indice;
+		}
+	}
 
 }

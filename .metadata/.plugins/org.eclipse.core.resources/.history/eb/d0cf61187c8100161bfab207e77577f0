@@ -1,0 +1,32 @@
+/**
+ * 
+ */
+package equipos_y_jugadores;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+/**
+ * @author Antonio
+ *
+ */
+public class EquipoTest {
+
+	/**
+	 * @throws java.lang.Exception
+	 */
+	@Before
+	public void setUp() throws Exception {
+	}
+
+	/**
+	 * Test method for {@link equipos_y_jugadores.Equipo#indiceEquipo(boolean)}.
+	 */
+	@Test
+	public final void testIndiceEquipo() {
+		fail("Not yet implemented"); // TODO
+	}
+
+}

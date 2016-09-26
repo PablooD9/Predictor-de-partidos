@@ -1,0 +1,82 @@
+package quiniela;
+
+import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Equipos {
+	public static String name;
+	public static Integer[] scoredGoals= new Integer[100];
+	public static Integer[] concededGoals= new Integer[100];
+	public static String[] teams= new String[20];
+	private static final int NUM_OF_TEAMS= 20;
+	
+	public Equipos() throws IOException
+	{
+//		scoredGoals= new ArrayList<Integer>();
+//		concededGoals= new ArrayList<Integer>();
+//		teams= new ArrayList<String>();
+	}
+	
+	public static void main(String[] args) throws IOException {
+		javax.swing.JFileChooser j= new javax.swing.JFileChooser();
+		j.showOpenDialog(j);
+		String path= j.getSelectedFile().getAbsolutePath();
+		chargeTeams(path);
+    }
+	
+	public static String getName()
+	{
+		return name;
+	}
+	
+	public static void setName(String newName)
+	{
+		name= newName;
+	}
+	
+	public static Integer[] getScoredGoals()
+	{
+		return scoredGoals;
+	}
+	
+	public static void setScoredGoals(Integer[] newScoredGoals)
+	{
+		scoredGoals= newScoredGoals;
+	}
+	
+	public static Integer[] getConcededGoals()
+	{
+		return concededGoals;
+	}
+	
+	public static void setConcededGoals(Integer[] newConcededGoals)
+	{
+		concededGoals= newConcededGoals;
+	}
+	
+	public static String[] getTeams()
+	{
+		return teams;
+	}
+	
+	public static void setTeams(String[] newTeams)
+	{
+		teams= newTeams;
+	}
+	
+	public static void chargeTeams(String fichero) throws IOException
+	{
+		BufferedReader file= new BufferedReader(
+								new FileReader(fichero));
+		int n= 1;
+		while (n != NUM_OF_TEAMS + 1)
+		{
+			teams[n-1]= file.readLine();
+			System.out.println(file.readLine());
+			n++;
+		} 
+		file.close();
+	}
+	
+}

@@ -1,0 +1,22 @@
+package quiniela;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+
+public class CargarEquipos {
+	
+	
+	public CargarEquipos() throws IOException
+	{
+	}
+	
+	public static void main(String[] args) throws IOException {
+		javax.swing.JFileChooser j= new javax.swing.JFileChooser();
+		j.showOpenDialog(j);
+		String path= j.getSelectedFile().getAbsolutePath();
+		chargeTeams(path);
+    }
+	
+}

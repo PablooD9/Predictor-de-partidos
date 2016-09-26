@@ -1,0 +1,20 @@
+package quiniela;
+
+import java.io.IOException;
+
+public class Prueba {
+
+	public static void main(String[] args) throws IOException {
+		prueba();
+    }
+	
+	public static void prueba()
+	{
+		int n= 0;
+		while (n != 10)
+		{
+			System.out.println(n);
+			n++;
+		}
+	}
+}

@@ -1,0 +1,124 @@
+package quiniela;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JComboBox;
+import javax.swing.JLabel;
+
+import java.awt.Color;
+import java.awt.Font;
+
+import javax.swing.JButton;
+
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import java.io.IOException;
+
+public class InterfazQuiniela extends JFrame {
+
+	private JPanel contentPane;
+	private Equipos teams;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					InterfazQuiniela frame = new InterfazQuiniela();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 * @throws IOException 
+	 */
+	public InterfazQuiniela() throws IOException {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		setLocationRelativeTo(null);
+		contentPane = new JPanel();
+		contentPane.setBackground(Color.BLACK);
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		etiquetaCasa();
+		
+		etiquetaVisit();
+		
+		desplegableVisit();
+		
+		desplegableCasa();
+		
+		botonCancelar();
+		
+		botonSiguiente();
+		
+		teams= new Equipos();
+	}
+
+	private void etiquetaVisit() {
+		JLabel lbEquipoFuera = new JLabel("Equipo visitante");
+		lbEquipoFuera.setForeground(Color.WHITE);
+		lbEquipoFuera.setFont(new Font("Microsoft YaHei UI", Font.BOLD, 13));
+		lbEquipoFuera.setBounds(298, 48, 126, 14);
+		contentPane.add(lbEquipoFuera);
+	}
+
+	private void etiquetaCasa() {
+		JLabel lbEquipoCasa = new JLabel("Equipo de casa");
+		lbEquipoCasa.setBackground(Color.WHITE);
+		lbEquipoCasa.setFont(new Font("Microsoft YaHei UI", Font.BOLD, 13));
+		lbEquipoCasa.setForeground(Color.WHITE);
+		lbEquipoCasa.setBounds(42, 48, 126, 14);
+		contentPane.add(lbEquipoCasa);
+	}
+
+	private void desplegableVisit() {
+		JComboBox cbEquipoVisit = new JComboBox();
+		cbEquipoVisit.setBounds(241, 73, 168, 20);
+		contentPane.add(cbEquipoVisit);
+		String[] equipos= teams.getTeams();
+	}
+
+	private void desplegableCasa() {
+		JComboBox cbEquipoCasa = new JComboBox();
+		cbEquipoCasa.setBounds(34, 73, 158, 20);
+		contentPane.add(cbEquipoCasa);
+	}
+
+	private void botonCancelar() {
+		JButton btnCancelar = new JButton("Cancelar");
+		btnCancelar.setForeground(Color.WHITE);
+		btnCancelar.addActionListener(new ActionListener() {
+		public void actionPerformed(ActionEvent arg0) 
+		{
+			
+		}
+		});
+		btnCancelar.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 12));
+		btnCancelar.setBackground(Color.BLACK);
+		btnCancelar.setBounds(320, 214, 89, 23);
+		contentPane.add(btnCancelar);
+	}
+
+	private void botonSiguiente() {
+		JButton btnSiguiente = new JButton("Siguiente");
+		btnSiguiente.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 12));
+		btnSiguiente.setBackground(Color.BLACK);
+		btnSiguiente.setForeground(Color.WHITE);
+		btnSiguiente.setBounds(211, 214, 89, 23);
+		contentPane.add(btnSiguiente);
+	}
+}

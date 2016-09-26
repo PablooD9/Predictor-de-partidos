@@ -1,0 +1,8 @@
+1474735864920	Delete element
+1474736272610	Delete element
+1474738035374	Extract method 'siguienteBoton'
+1474738069992	Extract method 'botonCancelar'
+1474738164570	Extract method 'desplegableCasa'
+1474738179561	Extract method 'desplegableVisit'
+1474738207509	Extract method 'etiquetaCasa'
+1474738232974	Extract method 'etiquetaVisit'

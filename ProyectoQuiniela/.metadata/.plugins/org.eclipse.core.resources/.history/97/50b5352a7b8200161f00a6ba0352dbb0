@@ -1,0 +1,70 @@
+package quiniela;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JComboBox;
+import javax.swing.JLabel;
+import java.awt.Color;
+import java.awt.Font;
+
+public class InterfazQuiniela extends JFrame {
+
+	private JPanel contentPane;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					InterfazQuiniela frame = new InterfazQuiniela();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public InterfazQuiniela() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		setLocationRelativeTo(null);
+		contentPane = new JPanel();
+		contentPane.setBackground(Color.BLACK);
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JComboBox comboBox = new JComboBox();
+		comboBox.setEnabled(false);
+		comboBox.setBounds(22, 73, 167, 20);
+		contentPane.add(comboBox);
+		
+		JComboBox comboBox_1 = new JComboBox();
+		comboBox_1.setEnabled(false);
+		comboBox_1.setBounds(251, 73, 158, 20);
+		contentPane.add(comboBox_1);
+		
+		JLabel lbEquipoCasa = new JLabel("Equipo de casa");
+		lbEquipoCasa.setBackground(Color.WHITE);
+		lbEquipoCasa.setFont(new Font("Microsoft YaHei UI", Font.BOLD, 13));
+		lbEquipoCasa.setForeground(Color.WHITE);
+		lbEquipoCasa.setBounds(56, 47, 126, 14);
+		contentPane.add(lbEquipoCasa);
+		
+		JLabel lbEquipoFuera = new JLabel("Equipo visitante");
+		lbEquipoFuera.setForeground(Color.WHITE);
+		lbEquipoFuera.setFont(new Font("Microsoft YaHei UI", Font.BOLD, 13));
+		lbEquipoFuera.setBounds(278, 48, 126, 14);
+		contentPane.add(lbEquipoFuera);
+	}
+}
